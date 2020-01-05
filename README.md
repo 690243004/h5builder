@@ -67,4 +67,4 @@ plugins : [
 
 # 实例 : 模仿p站页面
 
-![](/Screenshot_2020-01-05pixiv.png)
+![](./Screenshot_2020-01-05pixiv.png)
