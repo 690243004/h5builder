@@ -1,0 +1,44 @@
+{
+  "id": "1612083",
+  "name": "滑动验证码",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "滑动验证码",
+  "glyphs": [
+    {
+      "icon_id": "5387946",
+      "name": "末端左右展开_o",
+      "font_class": "moduanzuoyouzhankai_o",
+      "unicode": "eb99",
+      "unicode_decimal": 60313
+    },
+    {
+      "icon_id": "8777372",
+      "name": "refresh",
+      "font_class": "icon-test",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "8777389",
+      "name": "close",
+      "font_class": "icon-test1",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "8777414",
+      "name": "info",
+      "font_class": "icon-test2",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "11372659",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e8af",
+      "unicode_decimal": 59567
+    }
+  ]
+}

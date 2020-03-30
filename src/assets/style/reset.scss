@@ -46,3 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a:link,
+a:hover,
+a:active,
+a:visited{
+  text-decoration: none;
+  color: #000;
+}
