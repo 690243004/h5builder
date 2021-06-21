@@ -1,18 +1,38 @@
 # 项目介绍
-使用webpack + babel + zepto ，专门用于打造的h5页面的壳工程
+webpack 多页应用 打包壳工程 
 
-# 项目目录
+## 一、项目目录
+
+重要目录如下 
+```
+build // 构建目录 
+src
+  |- pages // html 页面 
+  |_js  // html 页面对应的js 
 ```
 
+## 二、使用 
+
+在 `src/pages/create_course.html`
+
+相应的，建立 `src/js/create_course/index.js`
+
+
+```
+# 开发环境 
+npm run dev 
+# 生产环境 
+npm run build 
 ```
 
 # 技术简介
 
 ## 1. 自适应
 
-使用postcss 以rem /vw 为单位，在375px像素的设备上设计对应各大尺寸设备的页面
+选用 ： 使用postcss 以rem /vw 为单位，在375px像素的设备上设计对应各大尺寸设备的页面
 
 ## 2. webpack-dev-server 
+
 多入口配置
 
 ## 3. 动态css语言
