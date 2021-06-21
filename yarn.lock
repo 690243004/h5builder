@@ -1376,7 +1376,7 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.0.0:
+browserslist@^4.0.0, browserslist@^4.6.0, browserslist@^4.8.0, browserslist@^4.8.2:
   version "4.16.6"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.6.tgz#d7901277a5a88e554ed305b183ec9b0c08f66fa2"
   integrity sha512-Wspk/PqO+4W9qp5iUTJsa1B/QrYn1keNCcEP5OvP7WBwT4KaDly0uONYmC6Xa3Z5IqnUgS0KcgLYu1l74x0ZXQ==
@@ -1386,15 +1386,6 @@ browserslist@^4.0.0:
     electron-to-chromium "^1.3.723"
     escalade "^3.1.1"
     node-releases "^1.1.71"
-
-browserslist@^4.6.0, browserslist@^4.8.0, browserslist@^4.8.2:
-  version "4.8.3"
-  resolved "https://registry.npm.taobao.org/browserslist/download/browserslist-4.8.3.tgz#65802fcd77177c878e015f0e3189f2c4f627ba44"
-  integrity sha1-ZYAvzXcXfIeOAV8OMYnyxPYnukQ=
-  dependencies:
-    caniuse-lite "^1.0.30001017"
-    electron-to-chromium "^1.3.322"
-    node-releases "^1.1.44"
 
 buffer-from@^1.0.0:
   version "1.1.1"
@@ -1550,15 +1541,10 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001219:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001012, caniuse-lite@^1.0.30001219:
   version "1.0.30001239"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001239.tgz#66e8669985bb2cb84ccb10f68c25ce6dd3e4d2b8"
   integrity sha512-cyBkXJDMeI4wthy8xJ2FvDU6+0dtcZSJW3voUF8+e9f1bBeuvyZfc3PNbkOETyhbR+dGCPzn9E7MA3iwzusOhQ==
-
-caniuse-lite@^1.0.30001012, caniuse-lite@^1.0.30001017:
-  version "1.0.30001019"
-  resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001019.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001019.tgz#857e3fccaad2b2feb3f1f6d8a8f62d747ea648e1"
-  integrity sha1-hX4/zKrSsv6z8fbYqPYtdH6mSOE=
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.1.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
@@ -2421,11 +2407,6 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
-
-electron-to-chromium@^1.3.322:
-  version "1.3.324"
-  resolved "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.324.tgz?cache=0&sync_timestamp=1578188822462&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron-to-chromium%2Fdownload%2Felectron-to-chromium-1.3.324.tgz#7f98e2c6e018429dd70cc1b424e56caf6b3a780f"
-  integrity sha1-f5jixuAYQp3XDMG0JOVsr2s6eA8=
 
 electron-to-chromium@^1.3.723:
   version "1.3.752"
@@ -4600,13 +4581,6 @@ node-libs-browser@^2.2.1:
     util "^0.11.0"
     vm-browserify "^1.0.1"
 
-node-releases@^1.1.44:
-  version "1.1.44"
-  resolved "https://registry.npm.taobao.org/node-releases/download/node-releases-1.1.44.tgz?cache=0&sync_timestamp=1577231700151&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnode-releases%2Fdownload%2Fnode-releases-1.1.44.tgz#cd66438a6eb875e3eb012b6a12e48d9f4326ffd7"
-  integrity sha1-zWZDim64dePrAStqEuSNn0Mm/9c=
-  dependencies:
-    semver "^6.3.0"
-
 node-releases@^1.1.71:
   version "1.1.73"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.73.tgz#dd4e81ddd5277ff846b80b52bb40c49edf7a7b20"
@@ -6606,6 +6580,11 @@ text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
+
+three@^0.129.0:
+  version "0.129.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.129.0.tgz#f5e530bbc96eac5d5b4749cb5da886ef0d42f554"
+  integrity sha512-wiWio1yVRg2Oj6WEWsTHQo5eSzYpEwSBtPSi3OofNpvFbf26HFfb9kw4FZJNjII4qxzp0b1xLB11+tKkBGB1ZA==
 
 through2@^2.0.0:
   version "2.0.5"
