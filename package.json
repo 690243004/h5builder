@@ -12,7 +12,7 @@
   "author": "Yangyan <690243003@qq.com>",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jquery": "^3.4.1",
     "qs": "^6.9.1",
     "stats.js": "^0.17.0",
