@@ -1,13 +1,23 @@
 import "@s/assets/style/normalize.scss";
 import $ from "jquery";
 import * as THREE from "three";
-
+import Stats from "stats.js";
 class App {
-  constructor() {}
+  constructor() {
+    this.step = 0;
+  }
   init() {
+    this.addStats();
     this.addScene();
     this.addLight();
-    this.render();
+    this.addShadow();
+    this.renderScene();
+  }
+
+  addStats() {
+    this.stats = new Stats();
+    this.stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+    document.body.appendChild(this.stats.dom);
   }
 
   addScene() {
@@ -33,7 +43,7 @@ class App {
     const planeGeometry = new THREE.PlaneGeometry(60, 20);
     // 定义平面颜色
     const planeMaterial = new THREE.MeshLambertMaterial({
-      color: "0xffffff",
+      color: "#fff",
     });
     // 定义网格对象
     this.plane = new THREE.Mesh(planeGeometry, planeMaterial);
@@ -74,16 +84,43 @@ class App {
 
     // 指向场景的中心
     this.camera.lookAt(this.scene.position);
+
     $("#app").append(this.renderer.domElement);
   }
 
   addLight() {
-    this.spotLight = new THREE.SpotLight(0xffffff);
+    this.spotLight = new THREE.SpotLight("#66ccff");
     this.spotLight.position.set(-40, 60, -10);
     this.scene.add(this.spotLight);
   }
 
+  addShadow() {
+    this.renderer.setClearColor("#eee");
+    // 渲染阴影启动
+    this.renderer.shadowMap.enabled = true;
+    // 定义哪些物体 接受 阴影
+    this.plane.receiveShadow = true;
+    // 定义那些物体 投射 阴影
+    this.cube.castShadow = true;
+    this.sphere.castShadow = true;
+    this.spotLight.castShadow = true;
+  }
+
+  renderScene() {
+    requestAnimationFrame(this.renderScene.bind(this));
+    this.render();
+  }
+
   render() {
+    this.stats.update();
+    // 转动方块
+    this.cube.rotation.x += 0.02;
+    this.cube.rotation.y += 0.02;
+    this.cube.rotation.z += 0.02;
+    // 弹弹球
+    this.step += 0.04;
+    this.sphere.position.x = 20 + 10 * Math.cos(this.step);
+    this.sphere.position.y = 2 + 10 * Math.abs(Math.sin(this.step));
     this.renderer.render(this.scene, this.camera);
   }
 }
