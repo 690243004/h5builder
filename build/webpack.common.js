@@ -19,10 +19,12 @@ function getHtmlMappings() {
 }
 
 function getHtmlPlugins(mappings) {
+
   return mappings.map((item) => {
     return new htmlWebpackPlugin({
       template: item.path,
       filename: item.fileName,
+      chunks: [item.fileNameWithoutExt]
     });
   });
 }
