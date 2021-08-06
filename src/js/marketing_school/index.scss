@@ -1,0 +1,165 @@
+// link visiited  acitve hover
+a {
+  text-decoration: none;
+}
+.header {
+  font-family: PingFang SC;
+  &-content {
+    margin: 0 auto;
+    width: 1412px;
+    height: 70px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    &-logo {
+      background: url(./images/logo.svg) no-repeat;
+      background-size: cover;
+      width: 150px;
+      height: 46px;
+      font-size: 0;
+      margin-right: 40px;
+    }
+
+    &-tabs {
+      margin-right: 190px;
+      font-size: 0;
+      &-item {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1b232e;
+        margin-right: 36px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          font-weight: bold;
+          color: #05d380;
+        }
+      }
+    }
+
+    &-guide {
+      font-size: 0;
+      margin-right: 33px;
+      &-item {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1b232e;
+
+        &:first-child {
+          margin-right: 20px;
+          position: relative;
+          color: #05d380;
+          span {
+            vertical-align: -2px;
+            margin-right: 3px;
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: url(./images/nac_icon_home.svg);
+          }
+
+          &:visited {
+            color: #1de594;
+          }
+          &:hover {
+            color: #1de594;
+            span {
+              background: url(./images/nac_icon_home_hover.svg);
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 16px;
+            background: #d8d8d8;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+
+    &-action {
+      display: flex;
+      align-items: center;
+      font-size: 0;
+      margin-right: 30px;
+      &-btn {
+        cursor: pointer;
+        height: 40px;
+        box-sizing: border-box;
+        line-height: 40px;
+        text-align: center;
+        &-login {
+          border: 1px solid #05d380;
+          border-radius: 4px;
+          font-size: 16px;
+          font-family: PingFang SC;
+          color: #05d380;
+          width: 80px;
+          margin-right: 20px;
+          &:hover {
+            background: #e6fff5;
+          }
+        }
+        &-try {
+          width: 110px;
+          background: linear-gradient(95deg, #3ed6b6 0%, #05d380 100%);
+          font-size: 16px;
+          font-family: PingFang SC;
+          font-weight: 400;
+          color: #ffffff;
+          border-radius: 4px;
+          &:hover {
+            background: linear-gradient(275deg, #3ed6b6 0%, #05d380 100%);
+          }
+        }
+      }
+    }
+
+    &-phone {
+      font-size: 16px;
+      font-family: DIN-Bold;
+      line-height: 21px;
+      color: #1b232e;
+      span {
+        margin-right: 4px;
+        display: inline-block;
+        vertical-align: -2px;
+        width: 16px;
+        height: 16px;
+        background: url(./images/nav_icon_phone.svg);
+      }
+    }
+  }
+}
+
+.section-banner {
+  height: 520px;
+  img {
+    height: 520px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.section-tabs {
+  width: 1200px;
+  height: 110px;
+  display: flex;
+  margin: 0 auto;
+
+  &-item { 
+    flex : 1;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

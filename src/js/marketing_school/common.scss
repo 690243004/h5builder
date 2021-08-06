@@ -1,0 +1,144 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+address,
+em,
+img,
+strong,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+footer,
+header,
+menu,
+nav,
+output,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-size: 14px;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    "PingFangSC-Light", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+input,
+textarea {
+  font-size: 14px;
+  background-color: #ffffff;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei",
+    "PingFangSC-Light", sans-serif;
+}
+input[type="text"] {
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+  color: #999;
+}
+input::-ms-clear {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll;
+}
+/*clear float*/
+.wrapfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.wrapfix {
+  display: inline-table;
+}
+/* Hides from IE-mac \*/
+* html .wrapfix {
+  height: 1%;
+}
+.wrapfix {
+  display: block;
+}
+/* End hide from IE-mac */
+* + html .wrapfix {
+  min-height: 1px;
+}
+/*ie7*/
+.hidden {
+  display: none;
+}
+.box_sizing {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
