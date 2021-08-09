@@ -14,7 +14,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "element-ui": "^2.15.5",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "qs": "^6.9.1",
     "stats.js": "^0.17.0",
     "three": "^0.129.0",
