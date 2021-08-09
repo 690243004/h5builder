@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.243" height="8.486" viewBox="0 0 17.243 8.486">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #83878c;
+      }
+    </style>
+  </defs>
+  <g id="next_page" data-name="next page" transform="translate(18 -0.757)">
+    <rect id="Rectangle_6" data-name="Rectangle 6" class="cls-1" width="16" height="1" rx="0.5" transform="translate(-18 4.5)"/>
+    <path id="Combined_Shape" data-name="Combined Shape" class="cls-1" d="M-.5,6A.5.5,0,0,0,0,5.5V.5A.5.5,0,0,0-.5,0,.5.5,0,0,0-1,.5V5H-5.5a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5Z" transform="translate(-5 0.757) rotate(-45)"/>
+  </g>
+</svg>

@@ -12,7 +12,7 @@ a {
     position: relative;
     align-items: center;
     &-logo {
-      background: url(./images/logo.svg) no-repeat;
+      background: url(../images/logo.svg) no-repeat;
       background-size: cover;
       width: 150px;
       height: 46px;
@@ -37,6 +37,10 @@ a {
           color: #05d380;
         }
       }
+      .active {
+        font-weight: bold;
+        color: #05d380;
+      }
     }
 
     &-guide {
@@ -58,7 +62,7 @@ a {
             display: inline-block;
             width: 16px;
             height: 16px;
-            background: url(./images/nac_icon_home.svg);
+            background: url(../images/nac_icon_home.svg);
           }
 
           &:visited {
@@ -67,7 +71,7 @@ a {
           &:hover {
             color: #1de594;
             span {
-              background: url(./images/nac_icon_home_hover.svg);
+              background: url(../images/nac_icon_home_hover.svg);
             }
           }
           &::after {
@@ -133,7 +137,7 @@ a {
         vertical-align: -2px;
         width: 16px;
         height: 16px;
-        background: url(./images/nav_icon_phone.svg);
+        background: url(../images/nav_icon_phone.svg);
       }
     }
   }
@@ -145,21 +149,5 @@ a {
     height: 520px;
     width: 100%;
     object-fit: cover;
-  }
-}
-
-.section-tabs {
-  width: 1200px;
-  height: 110px;
-  display: flex;
-  margin: 0 auto;
-
-  &-item { 
-    flex : 1;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
   }
 }

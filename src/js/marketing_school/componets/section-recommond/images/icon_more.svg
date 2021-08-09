@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #a8acb2;
+      }
+    </style>
+  </defs>
+  <g id="icon_more" transform="translate(-41 -5)">
+    <rect id="矩形_404" data-name="矩形 404" class="cls-1" width="8" height="12" transform="translate(41 5)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-2" width="8" height="1" rx="0.5" transform="translate(43 5.343) rotate(45)"/>
+    <rect id="Rectangle_19-2" data-name="Rectangle 19" class="cls-2" width="1" height="8" rx="0.5" transform="translate(47.95 10.293) rotate(45)"/>
+  </g>
+</svg>
