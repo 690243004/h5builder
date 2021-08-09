@@ -1,0 +1,52 @@
+<svg id="bottom-news" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="380" viewBox="0 0 600 380">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e82929;
+        opacity: 0.68;
+      }
+
+      .cls-2 {
+        fill: #05d380;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        opacity: 0.61;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Mask" class="cls-1" width="600" height="380"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.26" y1="1" x2="1.103" y2="0.257" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2ae298"/>
+      <stop offset="1" stop-color="#05d380" stop-opacity="0.059"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1.111" y1="-0.192" x2="-0.161" y2="1.184" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29d992"/>
+      <stop offset="1" stop-color="#05d380" stop-opacity="0.059"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="1.102" y1="1.241" x2="0.233" y2="0.057" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#37df9c"/>
+      <stop offset="1" stop-color="#05d380" stop-opacity="0.059"/>
+    </linearGradient>
+  </defs>
+  <path id="Mask-2" data-name="Mask" class="cls-2" d="M0,0H594a6,6,0,0,1,6,6V374a6,6,0,0,1-6,6H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"/>
+  <g id="bottom-news_copy" data-name="bottom-news copy" class="cls-3">
+    <path id="Rectangle_30" data-name="Rectangle 30" class="cls-4" d="M757.688-4.2,913.931,291.118,287.241,634.509,53.735,375.249Z" transform="translate(-205.906 -143.339)"/>
+    <path id="Rectangle_30-2" data-name="Rectangle 30" class="cls-5" d="M0,316.018V0H579Z" transform="translate(22 1.982)"/>
+    <path id="Rectangle_30-3" data-name="Rectangle 30" class="cls-6" d="M0,0V316.018H579Z" transform="translate(22 64)"/>
+  </g>
+</svg>

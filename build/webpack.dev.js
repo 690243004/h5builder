@@ -38,6 +38,7 @@ module.exports = merge(common, {
     port: '3000',
     contentBase: path.join(__dirname, '../dist'),
     publicPath: '',
+    hot : true,
     proxy: {
       // '/api/uauth/uauth': {
       //   target: 'http://202.135.136.197:8200',

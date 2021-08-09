@@ -4,7 +4,7 @@ const _ = require("lodash");
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const chalk = require("chalk");
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
-
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 function getHtmlMappings() {
   const dirs = fs.readdirSync(path.join(__dirname, "../src/pages"));
   const htmlFileNames = dirs.filter((f) => f.endsWith(".html"));
@@ -19,12 +19,11 @@ function getHtmlMappings() {
 }
 
 function getHtmlPlugins(mappings) {
-
   return mappings.map((item) => {
     return new htmlWebpackPlugin({
       template: item.path,
       filename: item.fileName,
-      chunks: [item.fileNameWithoutExt]
+      chunks: [item.fileNameWithoutExt],
     });
   });
 }
@@ -57,6 +56,14 @@ module.exports = {
     //chunk生成的配置，可以的话，尽量不要用chunk
     chunkFilename: "js/[id].[hash].chunk.js",
   },
+  module: {
+    rules: [
+      {
+        test: /\.vue$/,
+        loader: "vue-loader",
+      },
+    ],
+  },
   resolve: {
     alias: {
       "@s": path.join(__dirname, "../src"),
@@ -66,10 +73,11 @@ module.exports = {
       path.resolve(__dirname, "../node_modules"),
     ],
     // 省略后缀
-    extensions: [".js", "css", "scss"],
+    extensions: [".vue",".js", "css", "scss"],
   },
   plugins: [
     ...getHtmlPlugins(mappings),
+    new VueLoaderPlugin(),
     new ProgressBarPlugin({
       format:
         "  build [:bar] " +

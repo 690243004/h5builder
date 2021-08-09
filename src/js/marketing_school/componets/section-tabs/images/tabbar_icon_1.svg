@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #acb1b7;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x2="0" y2="1.143" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eaecef"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="tabbar_icon_1" data-name="tabbar icon_1" transform="translate(209 -3660)">
+    <rect id="矩形_377" data-name="矩形 377" class="cls-1" width="30" height="30" transform="translate(-209 3660)"/>
+    <g id="all" transform="translate(-207 3662)">
+      <g id="Rectangle_25" data-name="Rectangle 25" class="cls-2">
+        <rect class="cls-4" width="10" height="10" rx="2"/>
+        <rect class="cls-5" x="1" y="1" width="8" height="8" rx="1"/>
+      </g>
+      <g id="Rectangle_25_Copy_2" data-name="Rectangle 25 Copy 2" class="cls-2" transform="translate(0 16)">
+        <rect class="cls-4" width="10" height="10" rx="2"/>
+        <rect class="cls-5" x="1" y="1" width="8" height="8" rx="1"/>
+      </g>
+      <g id="Rectangle_25_Copy" data-name="Rectangle 25 Copy" class="cls-3" transform="translate(16)">
+        <rect class="cls-4" width="10" height="10" rx="2"/>
+        <rect class="cls-5" x="1" y="1" width="8" height="8" rx="1"/>
+      </g>
+      <g id="Rectangle_25_Copy_3" data-name="Rectangle 25 Copy 3" class="cls-2" transform="translate(16 16)">
+        <rect class="cls-4" width="10" height="10" rx="2"/>
+        <rect class="cls-5" x="1" y="1" width="8" height="8" rx="1"/>
+      </g>
+    </g>
+  </g>
+</svg>
