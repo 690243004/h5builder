@@ -1,0 +1,70 @@
+.kk-pagination {
+  display: flex;
+  justify-content: center;
+  color: #7f848b;
+  font-size: 13px;
+
+  &__th {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 6px;
+    margin-right: 14px;
+
+    &:hover {
+      color: #05d380;
+    }
+
+    &--active {
+      background: #05d380;
+      color: #fff;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    user-select: none;
+
+    &__pre {
+      margin-right: 14px;
+      background: url(./images/last_page.svg) no-repeat;
+      background-position: center center;
+
+      &:hover {
+        background: url(./images/last_page_hover.svg) no-repeat;
+        background-color: #fff;
+        background-position: center center;
+      }
+    }
+
+    &__next {
+      background: url(./images/next_page.svg) no-repeat;
+      background-position: center center;
+      &:hover {
+        background: url(./images/next_page_hover.svg) no-repeat;
+        background-color: #fff;
+        background-position: center center;
+      }
+    }
+
+    &__pre,
+    &__next {
+      box-sizing: border-box;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #fff;
+    }
+
+    &__first {
+      margin-right: 14px;
+    }
+  }
+}

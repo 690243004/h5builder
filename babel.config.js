@@ -1,8 +1,13 @@
 module.exports = {
-  "presets": [
-    '@babel/env'
+  presets: ["@babel/env"],
+  plugins: [
+    "@babel/transform-runtime",
+    [
+      "component",
+      {
+        libraryName: "element-ui",
+        styleLibraryName: "theme-chalk",
+      },
+    ],
   ],
-  "plugins": [
-    '@babel/transform-runtime'
-  ]
-}
+};
