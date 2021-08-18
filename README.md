@@ -1,5 +1,5 @@
 # 项目介绍
-webpack 多页应用 打包壳工程 
+webpack 多页应用 打包壳工程。注意，**该项目已被废弃，原因: 不适合生产环境 **
 
 ## 一、项目目录
 
@@ -25,8 +25,7 @@ npm run dev
 npm run build 
 ```
 
-# 技术简介
-
+# 支持
 ## 1. 自适应
 
 选用 ： 使用postcss 以rem /vw 为单位，在375px像素的设备上设计对应各大尺寸设备的页面
@@ -39,6 +38,10 @@ npm run build
 使用scss 
 
 ## 4. 多页应用
+一次打包多个页面
+
+## 5. vue 
+支持 vue 模块
 
 ### 配置多页server
 在dev-server中指定输出目录 
@@ -63,6 +66,7 @@ new htmlWebpackPlugin({
   filename: 'test.html'
 })
 ```
+
 运行dev-server ，最后浏览器访问 http://localhost:3000/test.html
 
 ### 多个入口对应多个页面 
